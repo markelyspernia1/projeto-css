@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mochiy+Pop+One&family=Montserrat:wght@100&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;    
+}
+
+body {
+    font-family: 'Montserrat' , sans-serif;
+    overflow-x: hidden;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #3D265E;
+  color: #fff;  
+}
+
+.navbar {
+  display: flex;  
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.brand{
+    margin-top: -7px;
+}
+
+.brand span {
+color: aqua;
+}
+
+.menu {
+   display: flex;  
+   width: 50%;
+   justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu .active {
+   color: aqua; 
+}
+
+.menu a:hover{
+    background-color: aqua;
+    color: #3D265E;
+    transition: ease-in .4s;
+}
+
+.main {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items:center;
+}
+
+h1 {
+    font-size: 5em;
+
+}
+
+span{
+    color: aqua;
+}
+
+.download-cv{
+    padding: 10px 20px;
+    background-color: aqua;
+    border:none ;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px rgba(102, 231, 200, .69);
+} 
+
+.download-cv:hover {
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.main img {
+    width: 350px;
+    border: 7px solid aqua;
+    height: 520px;
+
+} 
+
+.Quien-sou-eu{
+ display: grid;
+ grid-template-columns: repeat(10, 1fr);
+ width: 100vw;
+ align-items: center;
+}
+
+.Quien-sou-eu img {
+    width: 100%;
+    grid-column: 1/5;
+}
+
+.about-infor {
+grid-column: 5/10;
+padding: 3em;
+} 
+
+.about-infor h2 {
+font-size: 2em;
+color: #3D265E;
+}
+.divider {
+    height: 4px;
+    width: 60px;
+    background-color: aqua;
+    margin-top: 5px;
+    margin-bottom: 2em;
+}
+
+.Quien-sou-eu p {
+    margin-bottom: 1em;
+}
+
+.Experiencia {
+width: 100vw;
+background-color: #3D265E;
+color: #fff;
+}
+.Portafolio {
+    width: 100vw;
+    padding: 5em;
+}
+
+.Portafolio h2 {
+    font-size: 2.5em;
+}
+
+.Experiencia .container {
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+    color: #fff;
+    background-color:#51D295;
+
+}
+
+.card__img {
+width: 100%;
+height: 150px;
+background-image:url(../proyecto\ css/css.png);
+background-size: cover;
+}
+
+ .card__title {
+     padding: 20px;
+ }
+
+ .projects-links {
+     display: flex;
+     justify-content: space-evenly;
+ }
+
+ .card__projects-links a {
+     color:#fff;
+     text-decoration: none;
+ }
+
+ .card__projects-links i {
+     font-size: 1.5em;
+ }
+
+ .card .project-details-content {
+margin: 0 auto;
+margin: 1em;
+width: 70%; 
+ }
+
+ .project-details-content a {
+     text-decoration: none;
+     color: #3D265E;
+     text-transform: uppercase;
+ }
+
+ .project-details-content {
+display: flex;
+width: 100%;
+justify-content: center;
+margin-top: 1em;
+
+ }
+
+ @media screen and (min-width:770px){
+     body{
+         min-height: 100vh;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+     }
+     
+ }
